@@ -1,0 +1,38 @@
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 220px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+  animation: fadeUp 0.5s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* imagem */
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
