@@ -1,7 +1,11 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout'
 
-export default function RootLayout({ children }) {
+type Props = {
+  children: React.ReactNode
+}
+
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="pt-br">
       <body>

@@ -1,11 +1,16 @@
 import Link from "next/link"
 import styles from "../styles/Layout.module.css"
 
-export default function Layout({ children }) {
+type Props = {
+  children: React.ReactNode
+}
+
+export default function Layout({ children }: Props) {
   return (
     <>
       <header className={styles.header}>
-        <h1>🌍 Portal de Viagens</h1>
+        <h1>Portal de Viagens</h1>
+
         <nav>
           <Link href="/">Home</Link>
           <Link href="/destinos">Destinos</Link>
